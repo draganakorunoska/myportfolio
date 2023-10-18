@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  background-color: #ffffff;
+  z-index: 99;
+}
+.header div .navig;
