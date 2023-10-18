@@ -5,49 +5,65 @@
     <meta name="viewport" content="" />
     <link rel="stylesheet" href="index.css" />
     <title>Personal Portfolio</title>
-  </head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,500;1,900&display=swap" rel="stylesheet">
   <body>
-    <!--Header start-->
+
     <header>
-      <div class="navig">
-        <div class="logo"><a href="#">Dragana's Portfolio</a></div>
+        <a href="#" class="name"><span>D</span>ragana</a>
+        <nav>
           <label for="check" class="checkbox">
-            <img src="./img/menu.png" width="30px" height="30px">
+            <i class="ri-menu-line"></i>
           </label>
           <input type="checkbox" name="check" id="check">
-          <ul>
-            <li><a href="#">Home</a>
-            <li><a href="#">About me</a>
-            <li><a href="#">Contact</a>
+        </nav>
+
+          <ul class="navig">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
          </div>
       </div>
     </header>
-    <!--Header end-->
-    <!--Main start-->
+
     <main>
-      <section class="frontpage_section">
-        <h1>HELLO</h1>
-        <div><p>Welcome to my personal portfolio!
-          <br>I'm <strong>Dragana</strong>, a person who likes to explore and learn new things.
-          <br>This is my first time doing a portfolio, so I hope you like it.</p></div>
-        <img src="./img/dragana.jpg" alt="my_picture" width="120px" height="120px">
-      <div class="cv_button">
-        <button class="cv">Download my CV</button>
-      </div>
-    </section>
-    <section class="aboutme_section">
-      <h2>How it started</h2>
-      <div><p>I am now 20 years old and I study Computer Science and Engineering.
-        <br>But, when I was younger and got my first computer I was fascinated by the Inspect tool and the short
-        time manipulation you could do with it. 
-        <br>I was amazed when I discovered that
-        not only those random words and numbers mean something but they can build a functional
-      page. </p></div>
-      <div><p>I come from a village called Vevcani which has very beautiful nature.</p></div>
-      <img src="./img/vevcani.jpg" alt="vevcani" width="400px" height="200px"
-    </section>
+      <nav>
+        <section class="frontpage_section">
+          <h1>HELLO</h1>
+          <div><p>Welcome to my personal portfolio!</p></div>
+        </section>
+
+        <section class="image_section">
+          <div class="cv_button">
+            <img src="./img/dragana.jpg">
+            <button class="cv">Download my CV</button>
+          </div>
+        </section>
+
+        <section>
+          <p>I'm <strong>Dragana</strong>, a person who likes to explore and learn new things.
+            <br>This is my first time doing a portfolio, so I hope you like it.
+            <br>I am 20 years old undergraduate Computer science engineer.
+          </p>
+        </section>
+      </nav>
+      <section class="projects">
+        <div>
+          <img src="./img/image1.jpg" alt="Card 1 Image" />
+          <h2>Project 1</h2>
+          <p>About my first project 1</p>
+        </div>
+        <div>
+          <img src="./img/image2.jpg" alt="Card 2 Image" />
+          <h2>Project 2</h2>
+          <p>About my second project 2</p>
+        </div>
+      </section>
     </main>
-    <!--Main end-->
+  
   </body>
 </html>

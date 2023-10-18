@@ -1,14 +1,121 @@
-body {
-  font-family: sans-serif;
+* {
+  font-family: Raleway, sans-serif;
 }
 
-.navigation {
+body {
+  color: #987398;
+  overflow-y: scroll;
+}
+
+header {
+  padding: transparent;
   z-index: 99;
-  background-color: #fff;
+  align-items: centers;
+  background-color: #e7eaf6;
+  justify-content: space-between;
   width: 100%;
+  margin: auto;
   position: fixed;
-  top: 1%;
-  left: 1%;
+  top: 0%;
+  left: 0%;
+}
+
+.name {
+  color: #a2a8d3;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.name span {
+  color: #987398;
+}
+
+.navig {
+  align-items: center;
+  list-style: none;
+  display: flex;
+}
+
+.navig a {
+  color: plum;
+  border: 2px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  padding: 3px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.navig a:hover {
+  color: #3f0f3f;
+}
+
+nav.checkbox, nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+main {
+  align-items: auto;
+  border: 100px;
+  justify-content: space-between;
+  gap: 60px;
+  width: 100%;
+  padding: 80px;
+  position: fixed;
+}
+
+.frontpage_section h1 {
+  border: 60px;
+  border-radius: 100px;
+  padding: 30px;
+  font-size: 40px;
+  display: flex;
+  position: sticky;
+}
+
+.frontpage_section div .p {
+  align-self: center;
+  display: flex;
+}
+
+.image_section {
+  display: flex;
+}
+
+.cv_button img {
+  position: right;
+  border: #000;
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+section .p {
+  text-align: right;
+}
+
+.projects .img #cards {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+}
+
+#cards .wrapper div {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.projects img {
+  max-width: 300px;
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */

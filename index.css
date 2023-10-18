@@ -1,12 +1,121 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
 body {
-  font-family: sans-serif;
+  color: #987398;
+  overflow-y: scroll;
 }
 header {
   width: 100%;
   position: fixed;
-  top: 1%;
-  left: 1%;
-  background-color: #ffffff;
+  padding: transparent;
+  margin: auto;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-color: #e7eaf6;
   z-index: 99;
+  align-items: centers;
+  justify-content: space-between;
 }
-.header div .navig;
+.name {
+  color: #a2a8d3;
+  font-size: 50px;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.name span {
+  color: #987398;
+}
+.navig {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navig a {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px;
+  border: 2px;
+  margin: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: plum;
+}
+.navig a:hover {
+  color: rgb(63, 15, 63);
+}
+nav.checkbox {
+  display: none;
+}
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 10px;
+  cursor: pointer;
+}
+main {
+  position: fixed;
+  width: 100%;
+  padding: 80px;
+  border: 100px;
+  /*margin-top: 100px;*/
+  align-items: auto;
+  justify-content: space-between;
+  gap: 60px;
+}
+/*main {
+  position: fixed;
+  padding: auto;
+  border: 200px;
+  margin-top: 100px;
+}*/
+.frontpage_section h1 {
+  display: flex;
+  font-size: 40px;
+  position: sticky;
+  border-radius: 100px;
+  padding: 30px;
+  border: 60px;
+}
+.frontpage_section div .p {
+  display: flex;
+  align-self: center;
+}
+.image_section {
+  display: flex;
+}
+.cv_button img {
+  width: 200px;
+  height: 200px;
+  border: black;
+  border-radius: 100px;
+  position: right;
+}
+section .p {
+  text-align: right;
+}
+.projects .img #cards {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+#cards .wrapper div {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+}
+.projects img {
+  max-width: 300px;
+}
+/*
+@media(min-width: 380) and (max-width: 768) {
+ header{} 
+}
+@media(min width: 768) and (max-width: 992){
+}
+@media(min-width: 992) and (max-width: 1100px){
+  ul
+}*/
