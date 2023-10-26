@@ -10,7 +10,6 @@ body {
 header {
   padding: transparent;
   z-index: 99;
-  align-items: centers;
   background-color: #e7eaf6;
   justify-content: space-between;
   width: 100%;
@@ -18,6 +17,10 @@ header {
   position: fixed;
   top: 0%;
   left: 0%;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .name {
@@ -33,7 +36,8 @@ header {
 }
 
 .navig {
-  align-items: center;
+  justify-content: space-between;
+  align-self: auto;
   list-style: none;
   display: flex;
 }
@@ -41,11 +45,9 @@ header {
 .navig a {
   color: plum;
   border: 2px;
-  justify-content: space-between;
-  align-items: center;
   margin: 0 20px;
   padding: 3px;
-  font-size: 10px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -64,58 +66,127 @@ nav .checkbox i {
 
 main {
   align-items: auto;
-  border: 100px;
-  justify-content: space-between;
-  gap: 60px;
   width: 100%;
-  padding: 80px;
-  position: fixed;
-}
-
-.frontpage_section h1 {
-  border: 60px;
-  border-radius: 100px;
-  padding: 30px;
-  font-size: 40px;
-  display: flex;
+  padding-top: 100px;
   position: sticky;
 }
 
-.frontpage_section div .p {
-  align-self: center;
+.whole_front {
+  border: 1px solid #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  margin: 20px;
+  padding: 40px;
   display: flex;
 }
 
-.image_section {
-  display: flex;
+.frontpage_section {
+  flex: 1;
 }
 
-.cv_button img {
-  position: right;
+.frontpage_section h1 {
+  padding: 60px;
+  font-size: 100px;
+}
+
+.frontpage_section div p {
+  padding: 60px;
+  font-size: 70px;
+}
+
+.image_section img {
   border: #000;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
+  border-radius: 250px;
+  width: 350px;
+  height: 350px;
 }
 
-section .p {
-  text-align: right;
-}
-
-.projects .img #cards {
-  gap: 10px;
-  width: 100%;
-  display: flex;
-}
-
-#cards .wrapper div {
-  border: 1px solid #444;
-  border-radius: 5px;
-  padding: 10px;
+.intro_section p {
+  text-align: center;
+  font-size: 30px;
 }
 
 .projects img {
-  max-width: 300px;
+  width: 300px;
+  height: 300px;
+}
+
+.projects {
+  gap: 50px;
+  width: 50px;
+  display: flex;
+}
+
+.projects div {
+  background-color: #e7eaf6;
+  border: 1px solid #b6adad;
+  border-radius: 15px;
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  transition: all 2s;
+}
+
+.projects div:hover {
+  width: 500px;
+  height: 500px;
+}
+
+@media (width >= 380px) and (width <= 768px) {
+  .whole_front {
+    margin: 10px;
+    padding: 2px;
+  }
+
+  .name {
+    margin-right: 0;
+    font-size: 30px;
+  }
+
+  .navig {
+    padding-left: 30px;
+  }
+
+  .navig a {
+    margin: 2px;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  .frontpage_section h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+  }
+
+  .frontpage_section div p {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .image_section img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro_section p {
+    font-size: 10px;
+  }
+
+  .projects div img {
+    width: 90px;
+    height: 70px;
+  }
+
+  .projects div {
+    width: 90px;
+    height: 70px;
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=index.9e4c6fd2.css.map */
