@@ -94,10 +94,6 @@ main {
   text-align: center;
   font-size: 30px;
 }
-.projects img {
-  width: 300px;
-  height: 300px;
-}
 .projects {
   display: flex;
   gap: 50px;
@@ -119,21 +115,6 @@ main {
 }
 
 @media (min-width: 380) and (max-width: 768) {
-  /*.navig {
-    display: flex;
-    justify-content: space-between;
-    align-self: auto;
-  }*/
-  /*.navig {
-    /*font-size: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-end;
-    container: inline-size;
-  }*/
-  /* header {
-    
-  }*/
   .whole_front {
     padding: 2px;
     margin: 10px;
@@ -156,30 +137,88 @@ main {
     font-size: 40px;
     text-align: center;
   }
-  .frontpage_section div p {
-    padding: 10px;
-    font-size: 30px;
-  }
-  .image_section img {
-    width: 100px;
-    height: 100px;
-  }
   .intro_section p {
-    font-size: 10px;
+    font-size: 50px;
   }
   .projects div img {
-    width: 90px;
-    height: 70px;
+    width: 150px;
+    height: 110px;
   }
   .projects div {
-    width: 90px;
-    height: 70px;
-    font-size: 10px;
+    width: 150px;
+    height: 110px;
+    font-size: 20px;
   }
 }
-/*
-@media(min width: 768) and (max-width: 992){
+@media (min-width: 768) and (max-width: 992) {
+  .whole_front {
+    padding: 5px;
+    margin: 12px;
+  }
+  .name {
+    font-size: 40px;
+    margin-right: 0;
+  }
+  .navig {
+    padding-left: 10px;
+  }
+  .navig a {
+    padding: 0;
+    margin: 2px;
+    font-size: 40px;
+  }
+  .frontpage_section h1 {
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .intro_section p {
+    font-size: 60px;
+  }
+  .projects div img {
+    width: 190px;
+    height: 150px;
+  }
+  .projects div {
+    width: 190px;
+    height: 150px;
+    font-size: 40px;
+  }
 }
-@media(min-width: 992) and (max-width: 1100px){
-  ul
-}*/
+@media (min-width: 992) and (max-width: 1100px) {
+  .whole_front {
+    padding: 5px;
+    margin: 12px;
+  }
+  .name {
+    font-size: 40px;
+    margin-right: 0;
+  }
+  .navig {
+    padding-left: 10px;
+  }
+  .navig a {
+    padding: 0;
+    margin: 2px;
+    font-size: 40px;
+  }
+  .frontpage_section h1 {
+    padding: 10px;
+    margin: 10px 10px;
+    font-size: 50px;
+    text-align: center;
+  }
+  .intro_section p {
+    font-size: 60px;
+  }
+  .projects div img {
+    width: 210px;
+    height: 180px;
+  }
+  .projects div {
+    width: 210px;
+    height: 180px;
+    font-size: 50px;
+  }
+}
